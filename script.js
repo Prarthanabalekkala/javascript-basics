@@ -76,11 +76,77 @@ else{
     console.log("minor");
 }
 
+let c= 5;
+let d = 2;
+let m = c + d;
+ console.log(m);
+
+ function showString()
+ {
+    console.log("hello world");
+ }
+
+showString();
+
+var showString=function()
+{
+    console.log("hello world");
+}
+showString();
+
+var showString = ()=>
+    {
+        console.log(" arrow fn hello world");
+}
+showString();
 
 
 
 
+//map
+
+var number=[1,2,3,4,5];
+var square=number.map((num)=>
+    {
+        return num*num;
+    })
+    console.log(square);
+
+    var fruits=["apple","oramge"];
+    var upperCase=fruits.map((fruit)=>
+{
+    return fruit.toUpperCase();
+})
+console.log(upperCase);
+
+//enhanced object literals
+
+var e="raju";
+var j=20;
+
+var person={
+    e,j,isStudent:true
+}
+console.log(person);
+
+//destructuring
+
+var person={
+    e:"bruno",
+    j:30,
+    isStudent:true
+}
+var {e,j,isStudent}=person;
+console.log(e);
+
+
+//promise
 
 
 
+//spread operator
+
+var numbers=[1,2,3,4,5];
+var newNumber=[...numbers,6,7,8,9];
+console.log(newNumber);
 
